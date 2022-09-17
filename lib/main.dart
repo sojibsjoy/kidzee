@@ -1,4 +1,5 @@
 import 'package:dogventurehq/states/bindings/initial.dart';
+import 'package:dogventurehq/states/data/routes.dart';
 import 'package:dogventurehq/ui/screens/home/home.dart';
 import 'package:dogventurehq/ui/screens/login/login.dart';
 import 'package:dogventurehq/ui/screens/splash/splash.dart';
@@ -26,21 +27,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          getPages: [
-            GetPage(
-              name: SplashScreen.routeName,
-              page: () => const SplashScreen(),
-            ),
-            GetPage(
-              name: HomeScreen.routeName,
-              page: () => const HomeScreen(),
-              binding: InitialBinding(),
-            ),
-            GetPage(
-              name: LoginScreen.routeName,
-              page: () => const LoginScreen(),
-            ),
-          ],
+          getPages: AllRoutes.allroutes,
           initialRoute: SplashScreen.routeName,
           initialBinding: InitialBinding(),
         );

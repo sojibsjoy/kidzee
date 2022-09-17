@@ -2,11 +2,13 @@ import 'dart:io';
 
 import 'package:dogventurehq/constants/colors.dart';
 import 'package:dogventurehq/constants/strings.dart';
-import 'package:dogventurehq/ui/screens/home/box.dart';
-import 'package:dogventurehq/ui/widgets/helper_widgets.dart';
+import 'package:dogventurehq/ui/screens/home/home_box.dart';
+import 'package:dogventurehq/ui/screens/puzzle/puzzle.dart';
+import 'package:dogventurehq/ui/widgets/helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -137,7 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   // puzzle
                   HomeBox(
                     bgClr: ConstantColors.kHomeBox3Clr,
-                    onTapFn: () {},
+                    onTapFn: () => Get.toNamed(
+                      PuzzleScreen.routeName,
+                    ),
                     img: ConstantStrings.kNumbers,
                     title: 'Puzzle',
                     titleClr: Colors.blue,

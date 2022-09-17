@@ -1,5 +1,6 @@
 import 'package:dogventurehq/states/data/prefs.dart';
 import 'package:dogventurehq/ui/screens/home/home.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:dogventurehq/ui/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -36,6 +37,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          'Kidzee',
+          style: TextStyle(
+            fontSize: 30.sp,
+            fontWeight: FontWeight.w800,
+            color: Colors.red.shade800,
+          ),
+        ),
+      ),
+    );
   }
 }

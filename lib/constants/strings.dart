@@ -9,18 +9,19 @@ class ConstantStrings {
   // static String kAdUnitIdIOS = 'ca-app-pub-6091813509134311/6265151441';
   // font family
   static String kFontHandlee = 'Handlee';
+  static String kFontSignika = 'Signika';
   static String kFontPermanentMarker = 'PermanentMarker';
 
   // icons
-  static String kNumbers = 'assets/images/numbers.png';
-  static String kReading = 'assets/images/reading.png';
+  static String kNumbers = 'assets/imgs/numbers.png';
+  static String kReading = 'assets/imgs/reading.png';
 
   // svg avatars
-  static String kCatAvatar = 'assets/svg/avatars/cat.svg';
-  static String kDogAvatar = 'assets/svg/avatars/dog.svg';
-  static String kParrotAvatar = 'assets/svg/avatars/parrot.svg';
-  static String kAlienAvatar = 'assets/svg/avatars/alien.svg';
-  static String kEvilAvatar = 'assets/svg/avatars/evil.svg';
-  static String kPenguinAvatar = 'assets/svg/avatars/penguin.svg';
-  static String kRabbitAvatar = 'assets/svg/avatars/rabbit.svg';
+  static String kCatAvatar = 'assets/svgs/avatars/cat.svg';
+  static String kDogAvatar = 'assets/svgs/avatars/dog.svg';
+  static String kParrotAvatar = 'assets/svgs/avatars/parrot.svg';
+  static String kAlienAvatar = 'assets/svgs/avatars/alien.svg';
+  static String kEvilAvatar = 'assets/svgs/avatars/evil.svg';
+  static String kPenguinAvatar = 'assets/svgs/avatars/penguin.svg';
+  static String kRabbitAvatar = 'assets/svgs/avatars/rabbit.svg';
 }
