@@ -13,6 +13,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:flutter/services.dart';
 
 class PuzzleScreen extends StatefulWidget {
   static String routeName = '/puzzle';
@@ -172,7 +173,7 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
                             child: Image.asset(
                               PuzzleData.puzzleList[_levelNo].image,
                               height: _isAdLoaded ? 280.h : 300.h,
-                              fit: BoxFit.fitHeight,
+                              fit: BoxFit.contain,
                             ),
                           ),
                         ),
@@ -256,6 +257,8 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
                                     false,
                                   ];
                                 }),
+                                splashColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
                                 child: Container(
                                   width: 55.w,
                                   height: 55.h,
@@ -356,6 +359,7 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
                                       setState(() {
                                         _finishFlag = true;
                                         _errorFlag = true;
+                                        HapticFeedback.lightImpact();
                                       });
                                     }
                                   }
